@@ -2,21 +2,32 @@
     "title": "test game",
     "description": "A cool game to test the arcade system",
     "howToPlay": "Instructions how to play this game",
-    "buttons": [
-        {
-            "p1-up": "move up"
-        },
-        {
-            "p1-down": "move down"
-        },
-        {
-            "p1-left": "move left"
-        },
-        {
-            "p1-right": "move right"
-        },
-        {
-            "p1-btn-yellow": "change color"
-        }
-    ]
+    "buttons": {
+        "p1-up": "move up",
+        "p1-down": "move down",
+        "p1-left": "move left",
+        "p1-right": "move right",
+        "p1-btn-1": "button 1",
+        "p1-btn-2": "button 2",
+        "p1-btn-3": "button 3",
+        "p1-btn-4": "button 4",
+        "p1-btn-5": "button 5",
+        "p1-btn-6": "button 6",
+        "p1-btn-yellow": "yellow",
+        "p1-btn-white": "white",
+        "p1-btn-red": "red",
+        "p2-up": "move up",
+        "p2-down": "move down",
+        "p2-left": "move left",
+        "p2-right": "move right",
+        "p2-btn-1": "button 1",
+        "p2-btn-2": "button 2",
+        "p2-btn-3": "button 3",
+        "p2-btn-4": "button 4",
+        "p2-btn-5": "button 5",
+        "p2-btn-6": "button 6",
+        "p2-btn-yellow": "yellow",
+        "p2-btn-white": "white",
+        "p2-btn-red": "red"
+    }
 }

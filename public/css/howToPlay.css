@@ -17,3 +17,28 @@ header{
 main{
     margin: 30px 150px;
 }
+
+.cls-1 {
+    fill: #ff0805;
+}
+
+.cls-2 {
+    fill: #3811f1;
+}
+
+.cls-3 {
+    fill: #fff;
+}
+
+.cls-4 {
+    fill: #ff0;
+}
+
+.cls-5 {
+    fill: #050805;
+}
+
+.cls-6 {
+    font-size: 12px;
+    font-family: MyriadPro-Regular, Myriad Pro;
+}
