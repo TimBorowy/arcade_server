@@ -1,0 +1,22 @@
+{
+    "title": "test game",
+    "description": "A cool game to test the arcade system",
+    "howToPlay": "Instructions how to play this game",
+    "buttons": [
+        {
+            "p1-up": "move up"
+        },
+        {
+            "p1-down": "move down"
+        },
+        {
+            "p1-left": "move left"
+        },
+        {
+            "p1-right": "move right"
+        },
+        {
+            "p1-btn-yellow": "change color"
+        }
+    ]
+}

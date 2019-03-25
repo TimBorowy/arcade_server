@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button view</title>
+    <link rel="stylesheet" href="css/howToPlay.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>How to play: <span>{gameTitle}</span></h1>
+        <p>{description}</p>
+    </header>
+    <main>
+        <img src="button-layout.svg" alt="arcade box button layout">
+    </main>
+</body>
+
+<script>
+
+    let url = new URL(window.location.href)
+    let gameTitle = url.searchParams.get("game")
+    let manifest
+
+    fetch('/' + gameTitle + '/manifest.json')
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (myJson) {
+            manifest = JSON.stringify(myJson)
+            makeButtonManual(manifest)
+
+        });
+
+    let makeButtonManual = function (manifest) {
+        console.log(manifest)
+        //todo: fill manifest fields in html layout
+    }
+</script>
+
+</html>
