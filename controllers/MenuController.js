@@ -16,8 +16,6 @@ let controller = {
             game.instruction_url = '/' + controller.encodeGameTitle(game.title) + '/instructions'
         })
 
-        console.log(games)
-
         res.render('index', {
             games: games
         })
@@ -41,13 +39,7 @@ let controller = {
             }
         })
 
-        console.log(selectedGame)
-
-        // controller.getGames().map(game => {
-        //     if (encodeGameTitle(game.title))
-        // })
-
-        res.render('instructions', {})
+        res.render('instructions', { game: selectedGame })
     }
 }
 
