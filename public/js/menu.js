@@ -151,7 +151,6 @@ document.onkeypress = function (evt) {
     if (charStr == 'q') {
         if (menuCounter - 1 >= 0) {
             url = getSelectedGame().href
-            url = url.slice(0, url.length - 1)
             window.location.href = url;
         }
     }
