@@ -1,37 +1,39 @@
 let request = require('request')
+let fs = require('fs');
+let http = require('http');
 
-let controller = {
+let controller = {}
 
-    index: function (req, res) {
-        res.render('index', {})
-    },
-    howToPlay: function (req, res) {
+index: function (req, res) {
+    res.render('index', {})
+},
+howToPlay: function (req, res) {
 
-        // get game title from url params
-        let gameTitle = req.param('game')
-        let response = res
+    // get game title from url params
+    let gameTitle = req.param('game')
+    let response = res
 
 
 
-        // make get request to manifest.json
-        // Todo: make url less hardcoded
-        request('http://localhost:8080/' + gameTitle + '/manifest.json', { json: true }, (err, res, body) => {
-            let errors = ''
+    // make get request to manifest.json
+    // Todo: make url less hardcoded
+    request('http://localhost:8080/' + gameTitle + '/manifest.json', { json: true }, (err, res, body) => {
+        let errors = ''
 
-            if (err) {
-                errors += err
-                return console.log(err)
-            }
+        if (err) {
+            errors += err
+            return console.log(err)
+        }
 
-            let manifest = body
+        let manifest = body
 
-            if (!typeof manifest == "object") {
-                errors += "Manifest is empty or not found"
-            }
+        if (!typeof manifest == "object") {
+            errors += "Manifest is empty or not found"
+        }
 
-            // render template with data from manifest
-            response.render('buttons', { manifest, errors })
-        })
-    }
+        // render template with data from manifest
+        response.render('buttons', { manifest, errors })
+    })
+}
 }
 module.exports = controller
