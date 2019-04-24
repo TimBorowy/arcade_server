@@ -4,7 +4,7 @@ let http = require('http');
 
 let controller = {}
 
-index: function (req, res) {
+/* index: function (req, res) {
     res.render('index', {})
 },
 howToPlay: function (req, res) {
@@ -35,5 +35,5 @@ howToPlay: function (req, res) {
         response.render('buttons', { manifest, errors })
     })
 }
-}
+} */
 module.exports = controller

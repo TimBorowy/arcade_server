@@ -1,6 +1,6 @@
 let request = require('request')
-let fs      = require('fs');
-let http    = require('http');
+let fs = require('fs');
+let http = require('http');
 
 let controller = {
 
@@ -12,20 +12,26 @@ let controller = {
         return Buffer.from(gameTitle, 'base64').toString('utf8')
     },
 
-    fetchManifest: function (url) {
+    fetchManifest: async function (url) {
 
-        let manifest = request({
-            url: url + 'manifest.json',
-            json: true
-        }, function (error, response, body) {
-            if (!error && response.statusCode === 200) {
-                return console.log(response)
-            }
+        // create new promise to wait for
+        let promise = new Promise((resolve, reject) => {
+            request({
+                url: url + 'manifest.json',
+                json: true
+            }, (error, response, body) => {
+                if (!error && response.statusCode === 200) {
+
+                    // resolve promise when we have result from our fetch
+                    resolve(body)
+
+                }
+            })
         })
 
-        return manifest
+        return await promise
     },
-    
+
     loadGames: function () {
         return JSON.parse(fs.readFileSync('games.json'));
     },
@@ -34,20 +40,25 @@ let controller = {
 
         let games = controller.loadGames()
 
-        let manifests = games.map(game => {
-            console.log(game.url)
+        /* let manifests = games.map(game => {
+            //console.log(game.url)
             return controller.fetchManifest(game.url)
+        }) */
+
+
+        games.forEach(game => {
+
+            controller.fetchManifest(game.url).then((manifest) => {
+                game.manifest = manifest
+                game.url = '/' + controller.encodeGameTitle(game.manifest.title) + '/instructions'
+            })
+
+
         })
 
-        console.log(manifests)
-
-        // games.forEach(game => {
-        //     game.url = '/' + controller.encodeGameTitle(game.title) + '/instructions'
-        // })
-
-        // res.render('index', {
-        //     games: games
-        // })
+        res.render('index', {
+            games: games
+        })
     },
 
     gameInstructions: function (req, res) {
