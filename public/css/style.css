@@ -2,6 +2,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .first-menu span, .second-menu span {
@@ -14,7 +15,8 @@ html, body {
 
 .first-menu {
   padding: 30px;
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
   font-size: 24px;
   justify-content: space-between;

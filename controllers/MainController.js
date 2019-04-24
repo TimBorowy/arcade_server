@@ -11,15 +11,26 @@ let controller = {
         let gameTitle = req.param('game')
         let response = res
 
+
+
         // make get request to manifest.json
         // Todo: make url less hardcoded
         request('http://localhost:8080/' + gameTitle + '/manifest.json', { json: true }, (err, res, body) => {
-            if (err) { return console.log(err); }
+            let errors = ''
+
+            if (err) {
+                errors += err
+                return console.log(err)
+            }
 
             let manifest = body
 
+            if (!typeof manifest == "object") {
+                errors += "Manifest is empty or not found"
+            }
+
             // render template with data from manifest
-            response.render('buttons', { manifest })
+            response.render('buttons', { manifest, errors })
         })
     }
 }
