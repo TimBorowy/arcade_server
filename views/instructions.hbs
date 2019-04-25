@@ -113,17 +113,16 @@
 </body>
 
 <script>
+document.onkeypress = function (e) {
+    e = e || window.event;
+    var charCode = e.keyCode || e.which;
+    var charStr = String.fromCharCode(charCode);
 
-    document.onkeypress = function (evt) {
-        evt = evt || window.event;
-        var charCode = evt.keyCode || evt.which;
-        var charStr = String.fromCharCode(charCode);
-
-        if (charStr == 'q') {
-            window.location.href = '{{ game.url }}';
-        }
-    };
-
+    // If one of the keys are pressed, redirect to the
+    if (charStr == 'p' || charStr == 'b') {
+        window.location.replace('{{ game.url }}');
+    }
+};
 </script>
 
 </html>
