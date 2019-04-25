@@ -23,7 +23,8 @@ var downCounterCache = 0;
 var upCounterCache = 0;
 
 function initSelector() {
-    activeMenu[counter].style.backgroundColor = 'cyan';
+    addColorToSelection(counter)
+    //activeMenu[counter].style.backgroundColor = 'cyan';
 }
 
 function cacheDownCounter() {
@@ -75,14 +76,16 @@ function resetCounter() {
 initSelector(playerTypes);
 
 function unselectElement() {
-    activeMenu[counter].style.backgroundColor = '';
+    //activeMenu[counter].style.backgroundColor = '';
+    removeColorFromSelection(counter)
 }
 
 function selectPreviousElement() {
     if (counter - 1 >= 0) {
         unselectElement();
         counter--;
-        activeMenu[counter].style.backgroundColor = 'cyan';
+        addColorToSelection(counter)
+        //activeMenu[counter].style.backgroundColor = 'cyan';
     }
 }
 
@@ -90,7 +93,8 @@ function selectNextElement() {
     if (counter + 1 < activeMenu.length) {
         unselectElement();
         counter++
-        activeMenu[counter].style.backgroundColor = 'cyan';
+        addColorToSelection(counter)
+        //activeMenu[counter].style.backgroundColor = 'cyan';
     }
 }
 
@@ -119,6 +123,19 @@ function getSelectedGame() {
 
     return thirthMenu.children[counter]
 }
+
+function addColorToSelection(selection){
+    //activeMenu[selection].style.backgroundColor = 'cyan';
+    activeMenu[selection].classList.add("selection")
+}
+
+function removeColorFromSelection(selection){
+    //activeMenu[selection].style.backgroundColor = '';
+    activeMenu[selection].classList.remove("selection")
+}
+
+
+
 
 // Listening to the browser which key is pressed.
 document.onkeypress = function (evt) {

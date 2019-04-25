@@ -56,11 +56,11 @@ let controller = {
 
         let selectedGame = null
 
-        controller.loadGames().forEach(game => {
+        controller.loadGames().some(game => {
 
             // look if url game title is found in our game list
-            if (req.param('encodedGameTitle') == controller.encodeGameTitle(game.title)) {
-
+            if (req.params.encodedGameTitle == controller.encodeGameTitle(game.title)) {
+                
                 selectedGame = game
 
                 // Get the details from the manifest file in the game directory
@@ -70,6 +70,12 @@ let controller = {
                     // Render template with game details
                     res.render('instructions', { game: selectedGame })
                 })
+
+                // Break the loop, we have found our game
+                return true
+            } else {
+                // Continue the loop
+                return false
             }
         })
 
