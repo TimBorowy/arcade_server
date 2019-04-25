@@ -40,40 +40,43 @@ let controller = {
 
         let games = controller.loadGames()
 
-        /* let manifests = games.map(game => {
-            //console.log(game.url)
-            return controller.fetchManifest(game.url)
-        }) */
-
-
+        // Loop through games and add an instruction url 
         games.forEach(game => {
-
-            controller.fetchManifest(game.url).then((manifest) => {
-                game.manifest = manifest
-                game.url = '/' + controller.encodeGameTitle(game.manifest.title) + '/instructions'
-            })
-
-
+            game.instruction_url = '/' + controller.encodeGameTitle(game.title) + "/instructions"
         })
 
+        // Render our template with our games array
         res.render('index', {
             games: games
         })
+
     },
 
     gameInstructions: function (req, res) {
 
-        let selectedGame = []
+        let selectedGame = null
 
-        controller.getGames().forEach(game => {
+        controller.loadGames().forEach(game => {
+
+            // look if url game title is found in our game list
             if (req.param('encodedGameTitle') == controller.encodeGameTitle(game.title)) {
-                selectedGame = game
-            }
 
-            // fetchManifest(selectedGame.)
+                selectedGame = game
+
+                // Get the details from the manifest file in the game directory
+                controller.fetchManifest(game.url).then((manifest) => {
+                    game.manifest = manifest
+
+                    // Render template with game details
+                    res.render('instructions', { game: selectedGame })
+                })
+            }
         })
 
-        res.render('instructions', { game: selectedGame })
+        // Only used when game is not found
+        if (selectedGame == null) {
+            res.end("item not found")
+        }
     }
 }
 

@@ -13,8 +13,8 @@
     <div id="app">
 
         <header>
-            <h1>How to play: <span>{{game.title}}</span></h1>
-            <p>{{game.description}}</p>
+            <h1>How to play: <span>{{game.manifest.title}}</span></h1>
+            <p>{{game.manifest.description}}</p>
         </header>
         <main>
             <p>{{errors}}</p>
@@ -79,27 +79,34 @@
                     transform="translate(-6 -2.48)" />
                 <path class="cls-1" d="M1000.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,1000.5,277.5Z" transform="translate(-6 -2.48)" />
                 <path d="M1000.5,224A26.5,26.5,0,1,1,974,250.5a26.53,26.53,0,0,1,26.5-26.5m0-1a27.5,27.5,0,1,0,27.5,27.5,27.5,27.5,0,0,0-27.5-27.5Z"
-                    transform="translate(-6 -2.48)" /><text class="cls-5" transform="translate(201 151.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(266 151.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(332 151.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(332 10.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(266 10.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(201 10.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(32 75.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(78 116.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(79 37.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(125 75.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(13 289.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(84 289.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(394 289.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(452 289.04)">{{game.controls.buttons.p1-up}}</text>
+                    transform="translate(-6 -2.48)" /><text class="cls-5" transform="translate(201 151.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(266 151.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(332 151.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(332 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(266 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(201 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(32 75.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(78 116.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(79 37.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(125 75.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(13 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(84 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(394 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(452 289.04)">{{game.manifest.controls.buttons.p1-up}}</text>
                 <path class="cls-1" d="M712.5,99.5a27,27,0,1,1,27-27A27,27,0,0,1,712.5,99.5Z" transform="translate(-6 -2.48)" />
                 <path d="M712.5,46A26.5,26.5,0,1,1,686,72.5,26.53,26.53,0,0,1,712.5,46m0-1A27.5,27.5,0,1,0,740,72.5,27.5,27.5,0,0,0,712.5,45Z"
-                    transform="translate(-6 -2.48)" /><text class="cls-5" transform="translate(646 71.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(692 112.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(693 33.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(739 71.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(806 10.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(872 10.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(939 10.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(806 143.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(869 143.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5" transform="translate(939 143.04)">{{game.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(910 289.04)">{{game.controls.buttons.p1-up}}</text><text class="cls-5"
-                    transform="translate(981 289.04)">{{game.controls.buttons.p1-up}}</text>
+                    transform="translate(-6 -2.48)" /><text class="cls-5" transform="translate(646 71.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(692 112.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(693 33.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(739 71.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(806 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(872 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(939 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(806 143.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(869 143.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(939 143.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(910 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
+                    class="cls-5" transform="translate(981 289.04)">{{game.manifest.controls.buttons.p1-up}}</text>
             </svg>
         </main>
     </div>
@@ -107,15 +114,15 @@
 
 <script>
 
-document.onkeypress = function (evt) {
-    evt = evt || window.event;
-    var charCode = evt.keyCode || evt.which;
-    var charStr = String.fromCharCode(charCode);
+    document.onkeypress = function (evt) {
+        evt = evt || window.event;
+        var charCode = evt.keyCode || evt.which;
+        var charStr = String.fromCharCode(charCode);
 
-    if (charStr == 'q') {
-        window.location.href = '{{ game.url }}';
-    }
-};
+        if (charStr == 'q') {
+            window.location.href = '{{ game.url }}';
+        }
+    };
 
 </script>
 
