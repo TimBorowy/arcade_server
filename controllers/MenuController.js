@@ -23,7 +23,6 @@ let controller = {
 
                     // Resolve promise when we have result from our fetch.
                     resolve(body)
-
                 }
             })
         })
@@ -48,7 +47,6 @@ let controller = {
         res.render('index', {
             games: games
         })
-
     },
 
     gameInstructions: function (req, res) {
@@ -57,7 +55,7 @@ let controller = {
 
         controller.loadGames().some(game => {
 
-            // look if url game title is found in our game list
+            // Look if url game title is found in our game list.
             if (req.params.encodedGameTitle == controller.encodeGameTitle(game.title)) {
                 
                 selectedGame = game
@@ -70,10 +68,10 @@ let controller = {
                     res.render('instructions', { game: selectedGame })
                 })
 
-                // Break the loop, we have found our game
+                // Break the loop, we have found our game.
                 return true
             } else {
-                // Continue the loop
+                // Continue the loop.
                 return false
             }
         })

@@ -1,9 +1,12 @@
+// Get menu selectables of first menu.
 firstMenu = document.querySelector('.first-menu');
 playerTypes = firstMenu.children;
 
+// Get menu selectables of second menu.
 secondMenu = document.querySelector('.second-menu');
 gameTypes = secondMenu.children;
 
+// Get menu selectables of thirth menu.
 thirthMenu = document.querySelector('.thirth-menu');
 games = thirthMenu.children;
 
@@ -11,7 +14,7 @@ games = thirthMenu.children;
 var menuCounter = 0;
 var menuIndex = [playerTypes, gameTypes, games];
 
-// Generate for each menu a cache.
+// Generate a cache for each menu.
 var menuCache = menuIndex.map(x => {
     return 0;
 })
@@ -24,7 +27,6 @@ var upCounterCache = 0;
 
 function initSelector() {
     addColorToSelection(counter)
-    //activeMenu[counter].style.backgroundColor = 'cyan';
 }
 
 function cacheDownCounter() {
@@ -76,7 +78,6 @@ function resetCounter() {
 initSelector(playerTypes);
 
 function unselectElement() {
-    //activeMenu[counter].style.backgroundColor = '';
     removeColorFromSelection(counter)
 }
 
@@ -85,7 +86,6 @@ function selectPreviousElement() {
         unselectElement();
         counter--;
         addColorToSelection(counter)
-        //activeMenu[counter].style.backgroundColor = 'cyan';
     }
 }
 
@@ -94,7 +94,6 @@ function selectNextElement() {
         unselectElement();
         counter++
         addColorToSelection(counter)
-        //activeMenu[counter].style.backgroundColor = 'cyan';
     }
 }
 
@@ -125,17 +124,12 @@ function getSelectedGame() {
 }
 
 function addColorToSelection(selection){
-    //activeMenu[selection].style.backgroundColor = 'cyan';
     activeMenu[selection].classList.add("selection")
 }
 
 function removeColorFromSelection(selection){
-    //activeMenu[selection].style.backgroundColor = '';
     activeMenu[selection].classList.remove("selection")
 }
-
-
-
 
 // Listening to the browser which key is pressed.
 document.onkeypress = function (evt) {
@@ -171,8 +165,4 @@ document.onkeypress = function (evt) {
             window.location.href = url;
         }
     }
-
-    // console.log('CachedCounters: ' + menuCache);
-    // console.log('Current menuCounter: ' + menuCounter);
-    // console.log('Current counter: ' + counter);
 };
