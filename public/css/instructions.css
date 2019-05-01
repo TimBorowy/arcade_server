@@ -9,36 +9,53 @@ body{
 
 header{
     margin: 0;
-    background: #673ab7;
-    box-shadow: 0px 2px 2px 0px black;
+    background: rgb(93, 138, 168);
+    //box-shadow: 0px 2px 2px 0px black;
     padding: 20px 30px;
+}
+header h1{
+    font-family: 'Press Start 2P', cursive;
 }
 
 main{
-    margin: 30px 150px;
+    margin: 30px;
 }
 
-.cls-1 {
-    fill: #ff0805;
+.st0 {
+    fill: none;
 }
 
-.cls-2 {
-    fill: #3811f1;
+.st1 {
 }
 
-.cls-3 {
-    fill: #fff;
+.st2 {
+    font-size: 40px;
+    //font-family: 'Press Start 2P', cursive;
 }
 
-.cls-4 {
-    fill: #ff0;
+.st3 {
+    fill: #F7DB21;
 }
 
-.cls-5 {
-    fill: #050805;
+.st4 {
+    fill: #F70000;
 }
 
-.cls-6 {
-    font-size: 12px;
-    font-family: MyriadPro-Regular, Myriad Pro;
+.st5 {
+    font-size: 18px;
+}
+
+.st6 {
+    fill: #0062AC;
+}
+
+.st7 {
+    fill: #FFFFFF;
+    stroke: #444140;
+    stroke-width: 1.4173;
+    stroke-miterlimit: 10;
+}
+
+.st8 {
+    font-size: 14px;
 }

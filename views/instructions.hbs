@@ -7,122 +7,256 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instructions</title>
     <link rel="stylesheet" href="/css/instructions.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
 
         <header>
-            <h1>How to play: <span>{{game.manifest.title}}</span></h1>
+            <h1>How to play: {{game.manifest.title}}</h1>
             <p>{{game.manifest.description}}</p>
         </header>
         <main>
             <p>{{errors}}</p>
             {{!-- <img src="button-layout.svg" alt="arcade box button layout"> --}}
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1022 295.52">
-                <defs>
-                </defs>
-                <title>button-layout</title>
-                <path class="cls-1" d="M286.5,73.5a27,27,0,1,1,27-27A27,27,0,0,1,286.5,73.5Z" transform="translate(-6 -2.48)" />
-                <path d="M286.5,20A26.5,26.5,0,1,1,260,46.5,26.53,26.53,0,0,1,286.5,20m0-1A27.5,27.5,0,1,0,314,46.5,27.5,27.5,0,0,0,286.5,19Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-2" d="M220.5,73.5a27,27,0,1,1,27-27A27,27,0,0,1,220.5,73.5Z" transform="translate(-6 -2.48)" />
-                <path d="M220.5,20A26.5,26.5,0,1,1,194,46.5,26.53,26.53,0,0,1,220.5,20m0-1A27.5,27.5,0,1,0,248,46.5,27.5,27.5,0,0,0,220.5,19Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-3" d="M33.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,33.5,277.5Z" transform="translate(-6 -2.48)" />
-                <path d="M33.5,224A26.5,26.5,0,1,1,7,250.5,26.53,26.53,0,0,1,33.5,224m0-1A27.5,27.5,0,1,0,61,250.5,27.5,27.5,0,0,0,33.5,223Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-4" d="M413.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,413.5,277.5Z" transform="translate(-6 -2.48)" />
-                <path d="M413.5,224A26.5,26.5,0,1,1,387,250.5,26.53,26.53,0,0,1,413.5,224m0-1A27.5,27.5,0,1,0,441,250.5,27.5,27.5,0,0,0,413.5,223Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M98.5,103.5a27,27,0,1,1,27-27A27,27,0,0,1,98.5,103.5Z" transform="translate(-6 -2.48)" />
-                <path d="M98.5,50A26.5,26.5,0,1,1,72,76.5,26.53,26.53,0,0,1,98.5,50m0-1A27.5,27.5,0,1,0,126,76.5,27.5,27.5,0,0,0,98.5,49Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-2" d="M352.5,73.5a27,27,0,1,1,27-27A27,27,0,0,1,352.5,73.5Z" transform="translate(-6 -2.48)" />
-                <path d="M352.5,20A26.5,26.5,0,1,1,326,46.5,26.53,26.53,0,0,1,352.5,20m0-1A27.5,27.5,0,1,0,380,46.5,27.5,27.5,0,0,0,352.5,19Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M352.5,132.5a27,27,0,1,1,27-27A27,27,0,0,1,352.5,132.5Z" transform="translate(-6 -2.48)" />
-                <path d="M352.5,79A26.5,26.5,0,1,1,326,105.5,26.53,26.53,0,0,1,352.5,79m0-1A27.5,27.5,0,1,0,380,105.5,27.5,27.5,0,0,0,352.5,78Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M286.5,132.5a27,27,0,1,1,27-27A27,27,0,0,1,286.5,132.5Z" transform="translate(-6 -2.48)" />
-                <path d="M286.5,79A26.5,26.5,0,1,1,260,105.5,26.53,26.53,0,0,1,286.5,79m0-1A27.5,27.5,0,1,0,314,105.5,27.5,27.5,0,0,0,286.5,78Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M220.5,132.5a27,27,0,1,1,27-27A27,27,0,0,1,220.5,132.5Z" transform="translate(-6 -2.48)" />
-                <path d="M220.5,79A26.5,26.5,0,1,1,194,105.5,26.53,26.53,0,0,1,220.5,79m0-1A27.5,27.5,0,1,0,248,105.5,27.5,27.5,0,0,0,220.5,78Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M103.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,103.5,277.5Z" transform="translate(-6 -2.48)" />
-                <path d="M103.5,224A26.5,26.5,0,1,1,77,250.5,26.53,26.53,0,0,1,103.5,224m0-1A27.5,27.5,0,1,0,131,250.5,27.5,27.5,0,0,0,103.5,223Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-4" d="M471.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,471.5,277.5Z" transform="translate(-6 -2.48)" />
-                <path d="M471.5,224A26.5,26.5,0,1,1,445,250.5,26.53,26.53,0,0,1,471.5,224m0-1A27.5,27.5,0,1,0,499,250.5,27.5,27.5,0,0,0,471.5,223Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M891.5,73.5a27,27,0,1,1,27-27A27,27,0,0,1,891.5,73.5Z" transform="translate(-6 -2.48)" />
-                <path d="M891.5,20A26.5,26.5,0,1,1,865,46.5,26.53,26.53,0,0,1,891.5,20m0-1A27.5,27.5,0,1,0,919,46.5,27.5,27.5,0,0,0,891.5,19Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-2" d="M825.5,73.5a27,27,0,1,1,27-27A27,27,0,0,1,825.5,73.5Z" transform="translate(-6 -2.48)" />
-                <path d="M825.5,20A26.5,26.5,0,1,1,799,46.5,26.53,26.53,0,0,1,825.5,20m0-1A27.5,27.5,0,1,0,853,46.5,27.5,27.5,0,0,0,825.5,19Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-3" d="M930.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,930.5,277.5Z" transform="translate(-6 -2.48)" />
-                <path d="M930.5,224A26.5,26.5,0,1,1,904,250.5,26.53,26.53,0,0,1,930.5,224m0-1A27.5,27.5,0,1,0,958,250.5,27.5,27.5,0,0,0,930.5,223Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-2" d="M957.5,73.5a27,27,0,1,1,27-27A27,27,0,0,1,957.5,73.5Z" transform="translate(-6 -2.48)" />
-                <path d="M957.5,20A26.5,26.5,0,1,1,931,46.5,26.53,26.53,0,0,1,957.5,20m0-1A27.5,27.5,0,1,0,985,46.5,27.5,27.5,0,0,0,957.5,19Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M957.5,132.5a27,27,0,1,1,27-27A27,27,0,0,1,957.5,132.5Z" transform="translate(-6 -2.48)" />
-                <path d="M957.5,79A26.5,26.5,0,1,1,931,105.5,26.53,26.53,0,0,1,957.5,79m0-1A27.5,27.5,0,1,0,985,105.5,27.5,27.5,0,0,0,957.5,78Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M891.5,132.5a27,27,0,1,1,27-27A27,27,0,0,1,891.5,132.5Z" transform="translate(-6 -2.48)" />
-                <path d="M891.5,79A26.5,26.5,0,1,1,865,105.5,26.53,26.53,0,0,1,891.5,79m0-1A27.5,27.5,0,1,0,919,105.5,27.5,27.5,0,0,0,891.5,78Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M825.5,132.5a27,27,0,1,1,27-27A27,27,0,0,1,825.5,132.5Z" transform="translate(-6 -2.48)" />
-                <path d="M825.5,79A26.5,26.5,0,1,1,799,105.5,26.53,26.53,0,0,1,825.5,79m0-1A27.5,27.5,0,1,0,853,105.5,27.5,27.5,0,0,0,825.5,78Z"
-                    transform="translate(-6 -2.48)" />
-                <path class="cls-1" d="M1000.5,277.5a27,27,0,1,1,27-27A27,27,0,0,1,1000.5,277.5Z" transform="translate(-6 -2.48)" />
-                <path d="M1000.5,224A26.5,26.5,0,1,1,974,250.5a26.53,26.53,0,0,1,26.5-26.5m0-1a27.5,27.5,0,1,0,27.5,27.5,27.5,27.5,0,0,0-27.5-27.5Z"
-                    transform="translate(-6 -2.48)" /><text class="cls-5" transform="translate(201 151.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(266 151.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(332 151.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(332 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(266 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(201 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(32 75.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(78 116.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(79 37.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(125 75.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(13 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(84 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(394 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(452 289.04)">{{game.manifest.controls.buttons.p1-up}}</text>
-                <path class="cls-1" d="M712.5,99.5a27,27,0,1,1,27-27A27,27,0,0,1,712.5,99.5Z" transform="translate(-6 -2.48)" />
-                <path d="M712.5,46A26.5,26.5,0,1,1,686,72.5,26.53,26.53,0,0,1,712.5,46m0-1A27.5,27.5,0,1,0,740,72.5,27.5,27.5,0,0,0,712.5,45Z"
-                    transform="translate(-6 -2.48)" /><text class="cls-5" transform="translate(646 71.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(692 112.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(693 33.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(739 71.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(806 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(872 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(939 10.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(806 143.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(869 143.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(939 143.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(910 289.04)">{{game.manifest.controls.buttons.p1-up}}</text><text
-                    class="cls-5" transform="translate(981 289.04)">{{game.manifest.controls.buttons.p1-up}}</text>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 1738 409" style="enable-background:new 0 0 1738 409;" xml:space="preserve">
+                <rect x="538" y="13" class="st0" width="162" height="44" />
+                <text transform="matrix(1 0 0 1 538 41.3994)" class="st1 st2">Player 1</text>
+                <rect x="1105" y="13" class="st0" width="162" height="44" />
+                <text transform="matrix(1 0 0 1 1105 41.3994)" class="st1 st2">Player 2</text>
+                <g>
+                    <path class="st3" d="M833.8,346.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S835.9,346.4,833.8,346.4z" />
+                    <path class="st3" d="M785.4,342.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C781.9,341.4,783.5,342.9,785.4,342.9z" />
+                </g>
+                <g>
+                    <path class="st3" d="M968.8,347.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S970.9,347.4,968.8,347.4z" />
+                    <path class="st3" d="M920.4,343.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C916.9,342.4,918.5,343.9,920.4,343.9z" />
+                </g>
+                <g>
+                    <g>
+                        <g>
+                            <path class="st4" d="M1018.7,177.3v-0.1c0-6.7-9.2-12-22.4-13.6v-14.9c7-3.1,12-10.2,12-18.4c0-11.1-9-20.1-20.1-20.1
+				c-11.1,0-20.1,9-20.1,20.1c0,8.2,4.9,15.2,12,18.4v14.9c-13,1.5-22.2,6.7-22.6,13.2h0l0,0.4c0,0,0,0,0,0h0l0,4.4l0,3.7l0,0.1
+				c0.6,7.7,13.7,13.5,30.5,13.5c17.4,0,30.6-6,30.6-14.1l0-0.5C1018.8,179.2,1018.7,177.8,1018.7,177.3 M974.3,125.2
+				c-1.5-1.5-0.8-4.6,1.5-6.9c2.3-2.3,5.4-3,6.9-1.5c1.5,1.5,0.8,4.6-1.5,6.9C978.9,126.1,975.8,126.7,974.3,125.2 M988.3,150.4
+				c1.4,0,2.8-0.1,4.1-0.4v26.4l0,0.5c-0.4,0.4-1.9,1-4.1,1c-2.2,0-3.7-0.6-4.1-1l0-27C985.5,150.3,986.9,150.4,988.3,150.4
+				 M961.6,177.2c0-3.9,7.4-8.2,18.6-9.6v2.8c-7.6,1.1-13,3.6-13,6.6c0,4,9.4,7.2,21,7.2c11.6,0,21-3.2,21-7.2c0-3-5.3-5.5-12.8-6.6
+				v-2.8c11.2,1.4,18.4,5.7,18.4,9.6v0.1l0,0c-0.2,5.7-12.3,10.5-26.6,10.5C973.8,187.9,961.6,183,961.6,177.2L961.6,177.2z
+				 M1014.8,184.4l0,0.5c0,4.8-10.9,10.1-26.6,10.1c-7.2,0-14-1.2-19.2-3.3c-4.4-1.8-7.2-4.3-7.4-6.5l0-3.3
+				c4.1,4.7,14.4,7.9,26.6,7.9c12.3,0,22.5-3.2,26.6-7.9C1014.8,182.6,1014.8,183.5,1014.8,184.4" />
+                        </g>
+                    </g>
+                    <text transform="matrix(1 0 0 1 977.2281 102.6668)" class="st1 st5">Up</text>
+                    <text transform="matrix(1 0 0 1 965.6454 222.6668)" class="st1 st5">Down</text>
+                    <text transform="matrix(1 0 0 1 915 162.6668)" class="st1 st5">Left</text>
+                    <text transform="matrix(1 0 0 1 1027 162.6668)" class="st1 st5">Right</text>
+                    <g>
+                        <path class="st4" d="M1169,158.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1171.1,158.4,1169,158.4z" />
+                        <path class="st4" d="M1120.6,154.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1117.1,153.4,1118.6,154.9,1120.6,154.9z" />
+                    </g>
+                    <g>
+                        <path class="st6" d="M1169,203.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1171.1,203.4,1169,203.4z" />
+                        <path class="st6" d="M1120.6,199.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1117.1,198.4,1118.6,199.9,1120.6,199.9z" />
+                    </g>
+                    <text transform="matrix(1 0 0 1 1134.0364 124.6668)" class="st1 st5">1</text>
+                    <text transform="matrix(1 0 0 1 1134.0364 232.6668)" class="st1 st5">4</text>
+                    <g>
+                        <path class="st6" d="M1252.3,158.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1254.4,158.4,1252.3,158.4z" />
+                        <path class="st6" d="M1203.9,154.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1200.4,153.4,1202,154.9,1203.9,154.9z" />
+                    </g>
+                    <g>
+                        <path class="st6" d="M1252.3,203.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1254.4,203.4,1252.3,203.4z" />
+                        <path class="st6" d="M1203.9,199.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1200.4,198.4,1202,199.9,1203.9,199.9z" />
+                    </g>
+                    <text transform="matrix(1 0 0 1 1217.4115 124.6668)" class="st1 st5">2</text>
+                    <text transform="matrix(1 0 0 1 1217.4115 232.6668)" class="st1 st5">5</text>
+                    <g>
+                        <path class="st4" d="M1335.7,158.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1337.8,158.4,1335.7,158.4z" />
+                        <path class="st4" d="M1287.3,154.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1283.8,153.4,1285.4,154.9,1287.3,154.9z" />
+                    </g>
+                    <g>
+                        <path class="st6" d="M1335.7,203.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1337.8,203.4,1335.7,203.4z" />
+                        <path class="st6" d="M1287.3,199.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1283.8,198.4,1285.4,199.9,1287.3,199.9z" />
+                    </g>
+                    <text transform="matrix(1 0 0 1 1300.7864 124.6668)" class="st1 st5">3</text>
+                    <text transform="matrix(1 0 0 1 1300.7864 232.6668)" class="st1 st5">6</text>
+                    <g>
+                        <path class="st4" d="M1335.5,345.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1337.5,345.4,1335.5,345.4z" />
+                        <path class="st4" d="M1287.1,341.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1283.5,340.4,1285.1,341.9,1287.1,341.9z" />
+                    </g>
+                    <g>
+                        <path class="st7" d="M1253.7,345.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+			S1255.8,345.4,1253.7,345.4z" />
+                        <path class="st7" d="M1205.3,341.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+			C1201.8,340.4,1203.4,341.9,1205.3,341.9z" />
+                    </g>
+                    <text transform="matrix(1 0 0 1 1217.2634 378.6668)" class="st1 st5">7</text>
+                    <text transform="matrix(1 0 0 1 1300.5247 380.6668)" class="st1 st5">8</text>
+                    <rect x="779" y="369" class="st0" width="204" height="50" />
+                    <text transform="matrix(1 0 0 1 779 378.9399)">
+                        <tspan x="0" y="0" class="st1 st8">Houd beide gele knoppen 1 sec </tspan>
+                        <tspan x="0" y="16.8" class="st1 st8">vast om naar het menu te gaan</tspan>
+                    </text>
+                </g>
+                <g>
+                    <text transform="matrix(1 0 0 1 1443.9622 27.6668)" class="st1 st5">Up =</text>
+                    <text transform="matrix(1 0 0 1 1437.1769 59.9395)" class="st1 st5">Left =</text>
+                    <text transform="matrix(1 0 0 1 1420.7964 124.485)" class="st1 st5">Down =</text>
+                    <text transform="matrix(1 0 0 1 1425.8361 92.2122)" class="st1 st5">Right =</text>
+                    <text transform="matrix(1 0 0 1 1456.6166 156.7576)" class="st1 st5">1 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6166 253.5757)" class="st1 st5">4 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6167 189.0303)" class="st1 st5">2 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6167 285.8484)" class="st1 st5">5 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6166 221.303)" class="st1 st5">3 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6166 318.1212)" class="st1 st5">6 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6167 350.3939)" class="st1 st5">7 =</text>
+                    <text transform="matrix(1 0 0 1 1456.6165 382.6668)" class="st1 st5">8 =</text>
+                </g>
+                <text transform="matrix(1 0 0 1 1495.7971 27.6668)" class="st1 st5">{{game.manifest.controls.buttons.p2-up}}</text>
+                <text transform="matrix(1 0 0 1 1495.797 59.9395)" class="st1 st5">{{game.manifest.controls.buttons.p2-left}}</text>
+                <text transform="matrix(1 0 0 1 1495.7964 124.485)" class="st1 st5">{{game.manifest.controls.buttons.p2-down}}</text>
+                <text transform="matrix(1 0 0 1 1495.797 92.2122)" class="st1 st5">{{game.manifest.controls.buttons.p2-right}}</text>
+                <text transform="matrix(1 0 0 1 1495.7972 156.7576)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-1}}</text>
+                <text transform="matrix(1 0 0 1 1495.7972 253.5757)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-4}}</text>
+                <text transform="matrix(1 0 0 1 1495.7974 189.0303)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-2}}</text>
+                <text transform="matrix(1 0 0 1 1495.7974 285.8484)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-5}}</text>
+                <text transform="matrix(1 0 0 1 1495.7972 221.303)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-3}}</text>
+                <text transform="matrix(1 0 0 1 1495.7972 318.1212)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-6}}</text>
+                <text transform="matrix(1 0 0 1 1495.7974 350.3939)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-white}}</text>
+                <text transform="matrix(1 0 0 1 1495.7971 382.6668)" class="st1 st5">{{game.manifest.controls.buttons.p2-btn-red}}</text>
+                <text transform="matrix(1 0 0 1 206.7966 32.6668)" class="st1 st5">= Up</text>
+                <text transform="matrix(1 0 0 1 206.7965 64.9395)" class="st1 st5">= Left</text>
+                <text transform="matrix(1 0 0 1 206.7964 129.485)" class="st1 st5">= Down</text>
+                <text transform="matrix(1 0 0 1 206.7965 97.2122)" class="st1 st5">= Right</text>
+                <text transform="matrix(1 0 0 1 206.7963 161.7576)" class="st1 st5">= 1</text>
+                <text transform="matrix(1 0 0 1 206.7963 258.5757)" class="st1 st5">= 4</text>
+                <text transform="matrix(1 0 0 1 206.7964 194.0303)" class="st1 st5">= 2</text>
+                <text transform="matrix(1 0 0 1 206.7964 290.8484)" class="st1 st5">= 5</text>
+                <text transform="matrix(1 0 0 1 206.7963 226.303)" class="st1 st5">= 3</text>
+                <text transform="matrix(1 0 0 1 206.7963 323.1212)" class="st1 st5">= 6</text>
+                <text transform="matrix(1 0 0 1 206.7963 355.3939)" class="st1 st5">= 7</text>
+                <text transform="matrix(1 0 0 1 206.7962 387.6668)" class="st1 st5">= 8</text>
+                <text transform="matrix(1 0 0 1 195 32.6668)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-up}}</text>
+                <text transform="matrix(1 0 0 1 195 64.9395)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-left}}</text>
+                <text transform="matrix(1 0 0 1 195 129.485)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-down}}</text>
+                <text transform="matrix(1 0 0 1 195 97.2122)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-right}}</text>
+                <text transform="matrix(1 0 0 1 195 161.7576)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-1}}</text>
+                <text transform="matrix(1 0 0 1 195 194.0303)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-2}}</text>
+                <text transform="matrix(1 0 0 1 195 226.303)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-3}}</text>
+                <text transform="matrix(1 0 0 1 195 258.5757)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-4}}</text>
+                <text transform="matrix(1 0 0 1 195 290.8484)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-5}}</text>
+                <text transform="matrix(1 0 0 1 195 323.1212)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-6}}</text>
+                <text transform="matrix(1 0 0 1 195 355.3939)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-white}}</text>
+                <text transform="matrix(1 0 0 1 195 387.6668)" text-anchor="end" class="st1 st5">{{game.manifest.controls.buttons.p1-btn-red}}</text>
+                <g>
+                    <g>
+                        <path class="st4" d="M451.7,177.3v-0.1c0-6.7-9.2-12-22.4-13.6v-14.9c7-3.1,12-10.2,12-18.4c0-11.1-9-20.1-20.1-20.1
+			c-11.1,0-20.1,9-20.1,20.1c0,8.2,4.9,15.2,12,18.4v14.9c-13,1.5-22.2,6.7-22.6,13.2h0l0,0.4c0,0,0,0,0,0h0l0,4.4l0,3.7l0,0.1
+			c0.6,7.7,13.7,13.5,30.5,13.5c17.4,0,30.6-6,30.6-14.1l0-0.5C451.8,179.2,451.7,177.8,451.7,177.3 M407.3,125.2
+			c-1.5-1.5-0.8-4.6,1.5-6.9c2.3-2.3,5.4-3,6.9-1.5c1.5,1.5,0.8,4.6-1.5,6.9C411.9,126.1,408.8,126.7,407.3,125.2 M421.3,150.4
+			c1.4,0,2.8-0.1,4.1-0.4v26.4l0,0.5c-0.4,0.4-1.9,1-4.1,1c-2.2,0-3.7-0.6-4.1-1l0-27C418.5,150.3,419.9,150.4,421.3,150.4
+			 M394.6,177.2c0-3.9,7.4-8.2,18.6-9.6v2.8c-7.6,1.1-13,3.6-13,6.6c0,4,9.4,7.2,21,7.2c11.6,0,21-3.2,21-7.2c0-3-5.3-5.5-12.8-6.6
+			v-2.8c11.2,1.4,18.4,5.7,18.4,9.6v0.1l0,0c-0.2,5.7-12.3,10.5-26.6,10.5C406.8,187.9,394.6,183,394.6,177.2L394.6,177.2z
+			 M447.8,184.4l0,0.5c0,4.8-10.9,10.1-26.6,10.1c-7.2,0-14-1.2-19.2-3.3c-4.4-1.8-7.2-4.3-7.4-6.5l0-3.3c4.1,4.7,14.4,7.9,26.6,7.9
+			c12.3,0,22.5-3.2,26.6-7.9C447.8,182.6,447.8,183.5,447.8,184.4" />
+                    </g>
+                </g>
+                <text transform="matrix(1 0 0 1 410.2282 102.6668)" class="st1 st5">Up</text>
+                <text transform="matrix(1 0 0 1 398.6454 222.6668)" class="st1 st5">Down</text>
+                <text transform="matrix(1 0 0 1 348 162.6668)" class="st1 st5">Left</text>
+                <text transform="matrix(1 0 0 1 460 162.6668)" class="st1 st5">Right</text>
+                <g>
+                    <path class="st6" d="M602,158.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8H602c2.1,0,3.8-1.7,3.8-3.8
+		S604.1,158.4,602,158.4z" />
+                    <path class="st6" d="M553.6,154.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C550.1,153.4,551.6,154.9,553.6,154.9z" />
+                </g>
+                <g>
+                    <path class="st4" d="M602,203.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8H602c2.1,0,3.8-1.7,3.8-3.8
+		S604.1,203.4,602,203.4z" />
+                    <path class="st4" d="M553.6,199.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C550.1,198.4,551.6,199.9,553.6,199.9z" />
+                </g>
+                <text transform="matrix(1 0 0 1 567.0364 124.6668)" class="st1 st5">1</text>
+                <text transform="matrix(1 0 0 1 567.0364 232.6668)" class="st1 st5">4</text>
+                <g>
+                    <path class="st4" d="M685.3,158.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S687.4,158.4,685.3,158.4z" />
+                    <path class="st4" d="M636.9,154.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C633.4,153.4,635,154.9,636.9,154.9z" />
+                </g>
+                <g>
+                    <path class="st4" d="M685.3,203.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S687.4,203.4,685.3,203.4z" />
+                    <path class="st4" d="M636.9,199.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C633.4,198.4,635,199.9,636.9,199.9z" />
+                </g>
+                <text transform="matrix(1 0 0 1 650.4115 124.6668)" class="st1 st5">2</text>
+                <text transform="matrix(1 0 0 1 650.4115 232.6668)" class="st1 st5">5</text>
+                <g>
+                    <path class="st6" d="M768.7,158.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S770.8,158.4,768.7,158.4z" />
+                    <path class="st6" d="M720.3,154.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C716.8,153.4,718.4,154.9,720.3,154.9z" />
+                </g>
+                <g>
+                    <path class="st4" d="M768.7,203.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S770.8,203.4,768.7,203.4z" />
+                    <path class="st4" d="M720.3,199.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C716.8,198.4,718.4,199.9,720.3,199.9z" />
+                </g>
+                <text transform="matrix(1 0 0 1 733.7864 124.6668)" class="st1 st5">3</text>
+                <text transform="matrix(1 0 0 1 733.7864 232.6668)" class="st1 st5">6</text>
+                <g>
+                    <path class="st4" d="M498.5,345.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		S500.5,345.4,498.5,345.4z" />
+                    <path class="st4" d="M450.1,341.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C446.5,340.4,448.1,341.9,450.1,341.9z" />
+                </g>
+                <g>
+                    <path class="st7" d="M416.7,345.4h-60.6c-2.1,0-3.8,1.7-3.8,3.8c0,2.1,1.7,3.8,3.8,3.8h60.6c2.1,0,3.8-1.7,3.8-3.8
+		C420.5,347.1,418.8,345.4,416.7,345.4z" />
+                    <path class="st7" d="M368.3,341.9h36.2c1.9,0,3.5-1.6,3.5-3.5v-1.9c0-9.2-7.4-16.6-16.6-16.6h-10c-9.2,0-16.6,7.4-16.6,16.6v1.9
+		C364.8,340.4,366.4,341.9,368.3,341.9z" />
+                </g>
+                <text transform="matrix(1 0 0 1 380.2635 378.6668)" class="st1 st5">7</text>
+                <text transform="matrix(1 0 0 1 463.5246 380.6668)" class="st1 st5">8</text>
             </svg>
         </main>
     </div>
 </body>
 
 <script>
-document.onkeypress = function (e) {
-    e = e || window.event;
-    var charCode = e.keyCode || e.which;
-    var charStr = String.fromCharCode(charCode);
+    document.onkeypress = function (e) {
+        e = e || window.event;
+        var charCode = e.keyCode || e.which;
+        var charStr = String.fromCharCode(charCode);
 
-    // If one of the keys are pressed, redirect to the
-    if (charStr == 'p' || charStr == 'b') {
-        window.location.replace('{{ game.url }}');
-    }
-};
+        // If one of the keys are pressed, redirect to the
+        if (charStr == 'p' || charStr == 'b') {
+            window.location.replace('{{ game.url }}');
+        }
+    };
 </script>
 
 </html>
