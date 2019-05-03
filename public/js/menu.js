@@ -137,29 +137,29 @@ document.onkeypress = function (evt) {
     var charCode = evt.keyCode || evt.which;
     var charStr = String.fromCharCode(charCode);
 
-    if (charStr == 'd') {
+    if (charCode == 54) {
         selectNextElement();
     }
 
-    if (charStr == 'a') {
+    if (charCode == 52) {
         selectPreviousElement();
     }
 
-    if (charStr == 's') {
+    if (charCode == 53) {
         if (menuCounter + 1 < menuIndex.length) {
             cacheUpCounter();
             selectNextMenu();
         }
     }
 
-    if (charStr == 'w') {
+    if (charCode == 50) {
         if (menuCounter - 1 >= 0) {
             cacheDownCounter();
             selectPreviousMenu();
         }
     }
 
-    if (charStr == 'b') {
+    if (charCode == 69) {
         if (menuCounter - 1 >= 0) {
             url = getSelectedGame().href
             window.location.href = url;
