@@ -33,13 +33,14 @@ Na het binnenhalen van de git aanpassingen moet de PM2 deamon even worden hersta
 
 ## Belangrijke dingen:
 
-De keycodes die aan de knoppen van de kast zitten kunnen worden aangepast met WinIpac
+De keycodes die aan de knoppen van de kast zitten kunnen worden aangepast met WinIpac. In het docs mapje is ook het configuratie bestand te vinden van de huidige keymaps.
 
 http://www.ultimarc.com/winipacv2.html
 
 https://www.ultimarc.com/mp_inst.html
 
 In `data/games.json` staat de lijst met games die worden getoond in het menu. Deze moet worden aangevuld met de repo's van de studenten.
+
 
 
 
