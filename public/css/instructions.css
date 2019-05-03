@@ -25,7 +25,9 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-
+    padding-top: 30px;
+    background: rgb(93, 138, 168);
+    color: #FFF;
 }
 
 .flex-container{
@@ -35,6 +37,7 @@ footer{
 }
 
 #continue, #back{
+    font-weight: bold;
     margin: 10px;
     width: 100px;
     text-align: center;
