@@ -1,6 +1,5 @@
 let request = require('request')
 let fs = require('fs');
-let http = require('http');
 
 let controller = {
 
@@ -14,7 +13,7 @@ let controller = {
 
     fetchManifest: async function (url) {
 
-        // create new promise to wait for
+        // Create new promise to wait for.
         let promise = new Promise((resolve, reject) => {
             request({
                 url: url + 'manifest.json',
@@ -22,9 +21,8 @@ let controller = {
             }, (error, response, body) => {
                 if (!error && response.statusCode === 200) {
 
-                    // resolve promise when we have result from our fetch
+                    // Resolve promise when we have result from our fetch.
                     resolve(body)
-
                 }
             })
         })
@@ -33,23 +31,22 @@ let controller = {
     },
 
     loadGames: function () {
-        return JSON.parse(fs.readFileSync('games.json'));
+        return JSON.parse(fs.readFileSync('data/games.json'));
     },
 
     index: function (req, res) {
 
         let games = controller.loadGames()
 
-        // Loop through games and add an instruction url 
+        // Loop through games and add an instruction url.
         games.forEach(game => {
             game.instruction_url = '/' + controller.encodeGameTitle(game.title) + "/instructions"
         })
 
-        // Render our template with our games array
+        // Render our template with our games array.
         res.render('index', {
             games: games
         })
-
     },
 
     gameInstructions: function (req, res) {
@@ -58,30 +55,30 @@ let controller = {
 
         controller.loadGames().some(game => {
 
-            // look if url game title is found in our game list
+            // Look if url game title is found in our game list.
             if (req.params.encodedGameTitle == controller.encodeGameTitle(game.title)) {
                 
                 selectedGame = game
 
-                // Get the details from the manifest file in the game directory
+                // Get the details from the manifest file in the game directory.
                 controller.fetchManifest(game.url).then((manifest) => {
                     game.manifest = manifest
 
-                    // Render template with game details
+                    // Render template with game details.
                     res.render('instructions', { game: selectedGame })
                 })
 
-                // Break the loop, we have found our game
+                // Break the loop, we have found our game.
                 return true
             } else {
-                // Continue the loop
+                // Continue the loop.
                 return false
             }
         })
 
-        // Only used when game is not found
+        // Only used when game is not found.
         if (selectedGame == null) {
-            res.end("item not found")
+            res.end("Item not found")
         }
     }
 }

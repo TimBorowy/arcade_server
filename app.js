@@ -9,15 +9,18 @@ const port = 8080
 
 app.set('view engine', 'hbs')
 
-app.use(bodyParser.json())    // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
+// To support JSON-encoded bodies.
+app.use(bodyParser.json())
+
+// To support URL-encoded bodies.
+app.use(bodyParser.urlencoded({
     extended: true
 }))
 
 app.use(express.static('public'))
 app.use(express.static('games'))
 
-// use routes defined in routes file
+// Use routes defined in routes file.
 app.use('/', router)
 
 app.listen(port, () => console.log(`Arcade server listening on port ${port}!`))
