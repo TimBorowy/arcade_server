@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    color: white;
     font-family: sans-serif;
 }
 body {
@@ -8,9 +7,9 @@ body {
 }
 
 header {
+    color: white;
     margin: 0;
     background: rgb(93, 138, 168);
-    //box-shadow: 0px 2px 2px 0px black;
     padding: 20px 30px;
 }
 header h1{
@@ -19,6 +18,44 @@ header h1{
 
 main{
     margin: 30px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.flex-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#continue, #back{
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#continue{
+    opacity: 1;
+    animation: blink 2s ease-in-out infinite;
+}
+
+  
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .st0 {
@@ -58,4 +95,16 @@ main{
 
 .st8 {
     font-size: 14px;
+}
+
+.continue-btn {
+    fill: #FFFFFF;
+    stroke: #454241;
+    stroke-width: 1.4173;
+    stroke-miterlimit: 10;
+}
+
+
+.back-btn {
+    fill: #F7DB21;
 }
