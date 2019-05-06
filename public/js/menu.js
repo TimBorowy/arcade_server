@@ -123,36 +123,40 @@ function getSelectedGame() {
     return thirthMenu.children[counter]
 }
 
-function addColorToSelection(selection){
+function addColorToSelection(selection) {
     activeMenu[selection].classList.add("selection")
 }
 
-function removeColorFromSelection(selection){
+function removeColorFromSelection(selection) {
     activeMenu[selection].classList.remove("selection")
 }
 
 // Listening to the browser which key is pressed.
-document.onkeypress = function (evt) {
-    evt = evt || window.event;
-    var charCode = evt.keyCode || evt.which;
+document.onkeydown = function (event) {
+
+    var charCode = event.which;
     var charStr = String.fromCharCode(charCode);
 
-    if (charCode == 54 || charCode == 187) {
+    // Move right
+    if (charCode == 39 || charCode == 68) {
         selectNextElement();
     }
 
-    if (charCode == 52 || charCode == 48) {
+    // Move left
+    if (charCode == 37 || charCode == 65) {
         selectPreviousElement();
     }
 
-    if (charCode == 53 || charCode == 189) {
+    // Move down
+    if (charCode == 40 || charCode == 83) {
         if (menuCounter + 1 < menuIndex.length) {
             cacheUpCounter();
             selectNextMenu();
         }
     }
 
-    if (charCode == 50 || charCode == 56) {
+    // Move up
+    if (charCode == 38 || charCode == 87) {
         if (menuCounter - 1 >= 0) {
             cacheDownCounter();
             selectPreviousMenu();
